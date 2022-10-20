@@ -99,6 +99,7 @@ img {
   color: inherit;
   display: block;
   text-decoration: none;
+  transition: box-shadow var(--transition-dur-and-func);
 }
 .header-list {
   display: flex;
@@ -114,6 +115,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--transition-dur-and-func);
 }
 .link-current {
   color: var(--accent-color);
@@ -137,6 +139,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--transition-dur-and-func);
 }
 .contact-link {
   display: flex;
@@ -156,6 +159,9 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   padding: 6px 22px;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
 }
 .filter-content {
   font-weight: 700;
@@ -316,16 +322,17 @@ img {
   position: relative;
 }
 .background-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 370px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
   bottom: 0;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
@@ -379,6 +386,8 @@ img {
 }
 .team-social-networks {
   fill: var(--icons-color);
+  transition: fill var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
 }
 .permanent-customers {
   display: flex;
@@ -399,6 +408,8 @@ img {
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   fill: var(--icons-color);
+  transition: fill var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
 }
 .footer {
   background: var(--background);
@@ -413,6 +424,7 @@ img {
 .footer-soc-nets-links {
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--transition-dur-and-func);
 }
 .footer-text {
   font-weight: 700;
